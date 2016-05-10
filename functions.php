@@ -1,26 +1,39 @@
 
 <?php
 
-
-
-<?php if(isset($_POST['submit_reg']){ // button name
-condb();
-$sqlinsert="INSERT INTO user_data('', email, nome, apelido, pwd) 
-			VALUES ('$_POST['']', '$_POST[email]','$_POST[nome]','$_POST[apelido]','$_POST[pwd]')";
-			include('index.php');
+if(isset($_POST['submit_reg'])){ // button name
+insertTo();
+require_once('index.php');
 }
 
+function insertTo(){
+condb();
+$sqlinsert="INSERT INTO user_data('', email, nome, apelido, pwd) VALUES ('$_POST['']', '$_POST[email]','$_POST[nome]','$_POST[apelido]','$_POST[pwd]')";
+
+if ($conn->query($sqlinsert) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+
+
+
+}
 
 function condb(){
-	$hostname="localhost";
+	$servername="localhost";
 	$username="root";
-	$password="root";
+	$password="";
 	$database="web_db";
 	
-	
-@mysql_connect ("$hostname","$username","$password") or die("Username ou Password erradas");
-@mysql_select_db($database) or die("Erro ao ligar à base de dados");
-
-}
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
 ?>

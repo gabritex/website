@@ -10,7 +10,7 @@
                 		Nome: <input type="text" name="nome"><br>
                 		Apelido: <input type="text" name="apelido"><br>
 						Password: <input type="text" name="pwd"><br>
-						<input type="submit" name="submit_reg">
+						<input type="submit" name="submit_reg" value="submit_reg">
                 	</form>
                    <!-- <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
