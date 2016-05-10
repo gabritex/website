@@ -4,13 +4,13 @@
             
                 <div class="col-lg-6">
                 	<!-- SIGN UP -->
-                	<form>
+                	<form action="functions.php" method="post">
                 		<h1>Registe-se</h1>
                 		Email: <input type="text" name="email"><br>
                 		Nome: <input type="text" name="nome"><br>
                 		Apelido: <input type="text" name="apelido"><br>
 						Password: <input type="text" name="pwd"><br>
-						<input type="submit">
+						<input type="submit" name="submit_reg">
                 	</form>
                    <!-- <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
