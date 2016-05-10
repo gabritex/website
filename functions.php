@@ -2,9 +2,9 @@
 <?php
 
 	$hostname="localhost";
-	$username="yyyyy";
-	$password="xxxxx";
-	$database="database_name";
+	$username="root";
+	$password="root";
+	$database="web_db";
 	
 	
 @mysql_connect ("$hostname","$username","$password") or die("Username ou Password erradas");
