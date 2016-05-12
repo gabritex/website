@@ -3,7 +3,6 @@
 <!-- Header -->
     <header>
         <div class="container">
-            
                 <div class="col-lg-6">
                 	<!-- SIGN UP -->
                 	<form method="post" action="up_form.php">
@@ -13,8 +12,6 @@
                 		Apelido: <input type="text" name="apelido"><br>
 						Password: <input type="text" name="pwd"><br>
 						<input type="submit" name="submit_reg" value="click">
-
-
                 	</form>
                     <div class="col-lg-6">
                     <!-- LOGIN -->
@@ -22,10 +19,9 @@
                 		<h1>Login</h1>
                 		Email: <input type="text" name="email"><br>
 						Password: <input type="text" name="pwd"><br>
-						<input type="submit">
+						<input type="submit" >
                 	</form>
                 </div>
-              
             </div>
         </div>
     </header>
